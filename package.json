@@ -1,0 +1,15 @@
+{
+  "name": "curso-linkedin-intro",
+  "version": "1.0.0",
+  "description": "Curso introducturio de typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "author": "Armando Sangerman",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
