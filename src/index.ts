@@ -3,6 +3,7 @@ type Color = 'negro' | 'rojo' | 'azul' | 'amarillo';
 class Vehiculo {
     _marca: string;
     _color: Color;
+    _numeroMotor = Vehiculo.generarIdentificador();
 
     constructor(marca: string, color: Color) {
         this._marca = marca;
@@ -19,6 +20,9 @@ class Vehiculo {
 
     private obtenerVelocidad(): string {
         return '100 km/h';
+    }
+    static generarIdentificador(): string {
+        return Math.random().toString(36).slice(2);
     }
 }
 
